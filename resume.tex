@@ -1,0 +1,144 @@
+\documentclass[10pt,letterpaper]{article}
+
+\usepackage[T1]{fontenc}
+\usepackage{lmodern}
+\usepackage[margin=0.55in]{geometry}
+\usepackage{enumitem}
+\usepackage{titlesec}
+\usepackage[hidelinks]{hyperref}
+\usepackage{multicol}
+
+\pagestyle{empty}
+\setlength{\parindent}{0pt}
+
+% Section formatting
+\titleformat{\section}{\large\bfseries\uppercase}{}{0em}{}[\titlerule]
+\titlespacing*{\section}{0pt}{8pt}{4pt}
+
+% Tighter lists
+\setlist[itemize]{nosep, left=0pt .. 1.5em, topsep=2pt}
+
+\begin{document}
+
+%-----------------------------------------------------------------------
+%  HEADER
+%-----------------------------------------------------------------------
+\begin{center}
+  {\LARGE\bfseries Jason Bian}\\[4pt]
+  New York, NY 10018 \quad
+  $\cdot$ \quad +1 734-730-6569 \quad
+  $\cdot$ \quad \href{mailto:jason.bian75@gmail.com}{jason.bian75@gmail.com}\\[2pt]
+  \href{https://www.linkedin.com/in/jasonzbian/}{linkedin.com/in/jasonzbian} \quad
+  $\cdot$ \quad
+  \href{https://github.com/IamJasonBian}{github.com/IamJasonBian}
+\end{center}
+
+%-----------------------------------------------------------------------
+%  EDUCATION
+%-----------------------------------------------------------------------
+\section{Education}
+
+\textbf{The University of Texas at Austin} \hfill Expected Dec 2025\\
+M.S.\ Computer Science \hfill GPA: 3.69\\[6pt]
+
+\textbf{University of Michigan, Ann Arbor} \hfill Dec 2019\\
+B.S.E.\ Industrial \& Operations Engineering \hfill Major GPA: 3.83
+
+%-----------------------------------------------------------------------
+%  EXPERIENCE
+%-----------------------------------------------------------------------
+\section{Experience}
+
+% ---- Amazon ----
+\textbf{Amazon.com} \hfill 2021--Present\\[2pt]
+\textit{Data Engineer II -- Supply Chain Optimization Technologies} \hfill 2022--Present
+
+\vspace{2pt}
+\textbf{High-Cardinality Forecast Generation}
+\begin{itemize}
+  \item Co-developed RL agent pipelines for inventory purchasing decisions with active buying actions against 7\% of US retail
+  \item Reduced latency of ${\sim}550$ forecasting input signals and shortened end-to-end runtime of 4 DL models by 64\%
+  \item Provided 24/7 Sev-2 support for streaming and batch execution of 6 core DL forecasting models with 1102+ weekly runs across all zip, merchant, ASIN, and marketplace hierarchies
+  \item Scaled 150 daily API calls to 630 over 6 months; reduced backtesting turnaround from 48 hours to 5 hours for inventory transfer decisions
+  \item Defined requirements, support patterns, and long-term planning needs with 20+ software and data science partner teams
+  \item Maintained yearly PR count of ${\sim}145$ across 24 packages with 2.3 avg revisions
+\end{itemize}
+
+\vspace{4pt}
+\textbf{Worldwide Sustainability -- Emissions Optimization}
+\begin{itemize}
+  \item Supported transfer decisions targeting ${\sim}1.5\%$ of US total emissions via green shipping option; ${\sim}524$K ktons of fulfillment network abatement in 2023
+  \item Designed Python and Scala applications for data externalization to external vendors for ship-with-Amazon-scale emission values
+  \item Increased high-specificity carbon data availability for warehouse transfer events from 45\% to 77\% via attribution models
+  \item Increased total pipeline test coverage from 33\% to 90\% for inbound and warehouse transfer emission pipelines
+  \item Extended alpha/beta environments, CI/CD, logging, integration testing, and orchestration frameworks against ${\sim}35.3$B read/write events per day
+  \item Grew internal carbon consulting customer base from 27 to 55 teams
+\end{itemize}
+
+\vspace{4pt}
+\textit{BIE II -- AMZL ORBIT} \hfill 2021--2022
+\begin{itemize}
+  \item Implemented go-to-live for delivery associate hiring LP solvers, reducing forecasting error by 13\% across all 500+ delivery stations
+  \item Tuned solver parameters and provided auditing support for DA attrition, topline package volume, and capacity commitment models
+  \item Automated scenario analysis by injecting Python heuristics into capacity optimization systems, reducing ${\sim}450$ hours of toil per month, compressing publishing from weekly to hourly
+\end{itemize}
+
+\vspace{6pt}
+% ---- Microsoft ----
+\textbf{Microsoft} \hfill 2020--2021\\
+\textit{Program Manager -- Azure Decision Science}
+
+\vspace{2pt}
+\textbf{Azure Compute Buffer Sizing}
+\begin{itemize}
+  \item Developed demand arm of Microsoft's multi-echelon capacity management strategy
+  \item Managed buying plans for Azure data-center compute with ${\sim}\$55$M of monthly demand sensitivity
+  \item Benchmarked COVID volatility and white-noise decompositions for demand signals
+\end{itemize}
+
+\vspace{4pt}
+\textbf{Azure Growth \& Offer Restrictions}
+\begin{itemize}
+  \item Improved system coverage of offer restriction/quota management models from 30\% to 45\% of Azure services
+  \item Built CVP-level analytics infrastructure for growth and weeks-of-supply in monthly capacity reviews
+\end{itemize}
+
+\vspace{6pt}
+% ---- OptimChain ----
+\textbf{OptimChain} \hfill 2020--2022\\
+\textit{Founder}
+\begin{itemize}
+  \item Founded consulting shop for Azure cloud migrations, pre-sale POCs, data estate development, self-service notebook pipelines
+  \item Acquired \$45K YTD revenue from consulting and leasing engagements over 3 months
+  \item Sold supply chain solutions via implement-then-hands-off model for four Midwest customers
+  \item Migrated aging manual systems with 1800 hours of labor saved
+  \item Developed custom ingestion frameworks for Azure migrations using Microsoft-sponsored design patterns
+  \item Managed contract negotiation, RFPs, staffing for ${\sim}7$ projects; led 3 US-based and 4 offshore resources
+\end{itemize}
+
+%-----------------------------------------------------------------------
+%  TECHNICAL SKILLS
+%-----------------------------------------------------------------------
+\section{Technical Skills}
+
+\textbf{Languages:} Java, Python, C, SQL, Scala, R, JavaScript/TypeScript, Shell (Bash)\\[2pt]
+\textbf{Frameworks:} Spark/PySpark, PyTorch, Airflow, Django, Flask, React, NumPy, Pandas, dplyr, tidyquant\\[2pt]
+\textbf{Infrastructure:} AWS (EMR, Glue, SageMaker, Lambda, Redshift, SNS, CloudWatch, CDK), Azure (Data Lake, Data Factory, Event Hub, Synapse, PostgreSQL), Apache (Parquet, Presto, Beam, Flink, Avro, Iceberg), Databricks Delta Lake, GitHub Actions, Jenkins\\[2pt]
+\textbf{ML \& Optimization:} Reinforcement Learning, Deep Learning, ARIMA, Convex Optimization, Multivariate Regression, Linear/Integer Programming, Markov Chains, Monte Carlo Simulation
+
+%-----------------------------------------------------------------------
+%  PROJECTS
+%-----------------------------------------------------------------------
+\section{Projects}
+
+\textbf{Riot Match History Classifier:} Guest lecture for INFO SYS 201 on League of Legends API extraction and decision tree classification\\[2pt]
+\textbf{Cloud Hydroponics:} Remote flow monitoring solution for automated hydroponic systems
+
+%-----------------------------------------------------------------------
+%  OTHER
+%-----------------------------------------------------------------------
+\section{Other}
+
+House-van construction, minimalist travel, sound engineering
+
+\end{document}
